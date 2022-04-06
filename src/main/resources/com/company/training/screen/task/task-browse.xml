@@ -45,6 +45,7 @@
                 <action id="create" type="create"/>
                 <action id="edit" type="edit"/>
                 <action id="remove" type="remove"/>
+                <action id="sendTaskInfo" icon="ENVELOPE" caption="Send task info" trackSelection="true"/>
             </actions>
             <columns>
                 <column id="name"/>
@@ -53,6 +54,7 @@
                 <column id="assignee"/>
                 <column id="project"/>
                 <column id="totalEstimation"/>
+                <column id="avatar"/>
             </columns>
             <simplePagination/>
             <buttonsPanel id="buttonsPanel"
@@ -61,6 +63,7 @@
                 <button id="editBtn" action="tasksTable.edit"/>
                 <button id="removeBtn" action="tasksTable.remove"/>
                 <button id="importTasksBtn" caption="msg://importTasksBtn.caption"/>
+                <button id="tasksTableSendTaskInfoBtn" action="tasksTable.sendTaskInfo"/>
             </buttonsPanel>
         </groupTable>
         <hbox id="lookupActions" spacing="true" visible="false">

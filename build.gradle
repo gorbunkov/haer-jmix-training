@@ -44,6 +44,13 @@ dependencies {
     implementation("io.jmix.audit:jmix-audit-starter")
     implementation("io.jmix.audit:jmix-audit-ui-starter")
     implementation("io.jmix.translations:jmix-translations-ru")
+    implementation("io.jmix.email:jmix-email-starter")
+    implementation("io.jmix.email:jmix-email-ui-starter")
+    implementation("io.jmix.quartz:jmix-quartz-starter")
+
+    implementation 'org.springframework.boot:spring-boot-starter-freemarker'
+    implementation("io.jmix.emailtemplates:jmix-emailtemplates-ui-starter")
+    implementation("io.jmix.emailtemplates:jmix-emailtemplates-starter")
 }
 
 test {

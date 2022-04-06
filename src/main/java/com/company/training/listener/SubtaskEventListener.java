@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
-@Component("tm_SubtaskEventListener")
+//@Component("tm_SubtaskEventListener")
 public class SubtaskEventListener {
 
     @Autowired

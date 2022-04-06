@@ -1,5 +1,6 @@
 package com.company.training.entity;
 
+import io.jmix.core.FileRef;
 import io.jmix.core.entity.annotation.JmixGeneratedValue;
 import io.jmix.core.metamodel.annotation.Composition;
 import io.jmix.core.metamodel.annotation.InstanceName;
@@ -45,12 +46,34 @@ public class Task {
     @ManyToOne(fetch = FetchType.LAZY)
     private Project project;
 
+    @Column(name = "ATTACHMENT", length = 1024)
+    private FileRef attachment;
+
+    @Column(name = "SECOND_ATTACHMENT", length = 1024)
+    private FileRef secondAttachment;
+
     @Composition
     @OneToMany(mappedBy = "task")
     private List<Subtask> subtasks;
 
     @Column(name = "TOTAL_ESTIMATION")
     private Integer totalEstimation;
+
+    public FileRef getSecondAttachment() {
+        return secondAttachment;
+    }
+
+    public void setSecondAttachment(FileRef secondAttachment) {
+        this.secondAttachment = secondAttachment;
+    }
+
+    public FileRef getAttachment() {
+        return attachment;
+    }
+
+    public void setAttachment(FileRef attachment) {
+        this.attachment = attachment;
+    }
 
     public Integer getTotalEstimation() {
         return totalEstimation;

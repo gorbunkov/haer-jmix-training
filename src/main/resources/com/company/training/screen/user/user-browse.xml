@@ -73,6 +73,7 @@
                 </popupButton>
             </buttonsPanel>
         </groupTable>
+        <image dataContainer="usersDc" property="avatar" width="100px" height="100px" scaleMode="CONTAIN"/>
         <hbox id="lookupActions" spacing="true" visible="false">
             <button action="lookupSelectAction"/>
             <button action="lookupCancelAction"/>
